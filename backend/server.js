@@ -10,8 +10,23 @@ import adminRouter from "./routes/adminRoute.js"
 // app config
 const app = express()
 const port = process.env.PORT || 4000
-connectDB()
-connectCloudinary()
+
+// Connect to database and start server
+const startServer = async () => {
+    try {
+        await connectDB()
+        connectCloudinary()
+        
+        app.listen(port, () => {
+            console.log(`✅ Server started on PORT:${port}`);
+        })
+    } catch (error) {
+        console.error('Failed to start server:', error);
+        process.exit(1);
+    }
+}
+
+startServer()
 
 // middlewares
 app.use(express.json())
