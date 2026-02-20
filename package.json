@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cd backend && yarn start",
     "dev": "cd backend && yarn server",
+    "build": "cd backend && yarn install",
     "install-all": "yarn --cwd backend && yarn --cwd frontend && yarn --cwd admin"
   },
   "engines": {
