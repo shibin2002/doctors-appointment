@@ -1,0 +1,14 @@
+{
+  "name": "doctors-appointment",
+  "version": "1.0.0",
+  "description": "Doctor appointment booking system",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && yarn start",
+    "dev": "cd backend && yarn server",
+    "install-all": "yarn --cwd backend && yarn --cwd frontend && yarn --cwd admin"
+  },
+  "engines": {
+    "node": "22.22.0"
+  }
+}

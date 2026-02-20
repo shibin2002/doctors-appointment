@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: doctors-appointment-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && yarn install
+    startCommand: cd backend && yarn start
+    envVars:
+      - key: NODE_ENV
+        value: production
