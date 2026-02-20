@@ -4,9 +4,9 @@
   "description": "Doctor appointment booking system",
   "private": true,
   "scripts": {
+    "postinstall": "cd backend && yarn install",
     "start": "cd backend && yarn start",
     "dev": "cd backend && yarn server",
-    "build": "cd backend && yarn install",
     "install-all": "yarn --cwd backend && yarn --cwd frontend && yarn --cwd admin"
   },
   "engines": {
